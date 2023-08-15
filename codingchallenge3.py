@@ -13,3 +13,5 @@ for i in range(len(user_word)):
         count += 1
 
 print("There are {} vowels in the word {}". format(count, user_word))
+
+#Creates a function that accepts a single word and returns the number of vowels in that word.
