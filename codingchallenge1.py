@@ -1,7 +1,9 @@
 import math
-radians = int(input("What is your angle in radians?"))
-degrees = radians * (180/math.pi)
-msg = "Your angle is {} degrees". format(degrees)
-print(msg)
-#converts user's angle in radians into degrees
+def rad_deg(radians):
+    degrees = radians * (180/math.pi)
+    msg = "Your angle is {} degrees". format(degrees)
+    print(msg)
+
+rad_deg(3)
+#function to convert user's angle in radians into degrees
 

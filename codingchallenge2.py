@@ -1,19 +1,22 @@
-list = input("Enter your list of numbers separated by a space")
-print("\n")
-user_list = list.split()
-
-for i in range(len(user_list)):
-    user_list[i] = int(user_list[i])
+def list_sort(list, order):
+    
+    for i in range(len(list)):
+        list[i] = int(list[i])
 # convert each item to int type and list in python
 
-list_order = input("What order would you like your list? Please enter asc, desc or none.")
+    if order == "asc":
+        print(sorted(list))
 
-if list_order == "asc":
-    print(sorted(user_list))
+    elif order == "desc":
+        print(sorted(list, reverse=True))
 
-elif list_order == "desc":
-    print(sorted(user_list, reverse=True))
+    elif order == "none":
+        print(list)
+    
+    else:
+        print("error")
 
-elif list_order == "none":
-    print(user_list)
+list = [1,2,3,4,5]
+list_sort(list, "desc")
 
+#function where you enter a list of numbers and choice of sorting
